@@ -41,6 +41,6 @@
                             case '/' : inp.value = num1/ Number(inp.value);break;
                      }
                      ;break;
-                     case 'clear':inp.value=null;break;
+                     case 'clear':inp.value=null;num1=0 ; currentOp = ''; inp.removeAttribute('disabled');break;
               }
         }
