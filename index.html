@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>calculator</title>
+       <link rel="stylesheet" href="stylesheet/out.css">
+</head>
+<body>
+      <section class="w-full h-screen flex justify-center items-center bg-white  dark:bg-[#2e2e2e] p-10 ">
+       <div class="calc m-auto w-full lg:w-1/2 flex flex-wrap p-10 bg-[#E8E6DF] dark:bg-[#1A1A18]  rounded-[20px] gap-5 *:border border-[0.5px] border-white">
+                  <input type="text" name="" id="inp" class="w-full border-none  rounded-[10px]
+                  bg-black p-3.5 text-white text-[16px]" disabled/>
+          <div class="w-full grid grid-cols-[repeat(5,1fr)] grid-rows-[repeat(2,1fr)] lg:grid-cols-[repeat(5,1fr)] lg:grid-rows-[repeat(2,1fr)] xl:grid-cols-[repeat(10,1fr)] xl:grid-rows-[repeat(1,1fr)] gap-2.5  justify-between">
+           <span onclick="displayNum(this)" class="digit">0</span>
+           <span onclick="displayNum(this)" class="digit">1</span>
+           <span onclick="displayNum(this)" class="digit">2</span>
+           <span onclick="displayNum(this)" class="digit">3</span>
+           <span onclick="displayNum(this)" class="digit">4</span>
+           <span onclick="displayNum(this)" class="digit">5</span>
+           <span onclick="displayNum(this)" class="digit">6</span>
+           <span onclick="displayNum(this)" class="digit">7</span>
+           <span onclick="displayNum(this)" class="digit">8</span>
+           <span onclick="displayNum(this)" class="digit">9</span>
+          </div>
+         <div class="w-full grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(2,1fr)] xl:grid-cols-[repeat(9,1fr)] xl:grid-rows-[repeat(1,1fr)] gap-2.5 justify-center *:text-xl">
+          <button onclick="operatorBtn('+')" class="operator">+</button>
+          <button onclick="operatorBtn('-')" class="operator">-</button>
+          <button onclick="operatorBtn('/')" class="operator">/</button>
+          <button onclick="operatorBtn('*')" class="operator">*</button>
+          <button onclick="operatorBtn('=')" class="operator">=</button>
+          <button onclick="operatorBtn('=')" class="operator text-xs! bg-[#F09595] power">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="white" class="size-5">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 5.636a9 9 0 1 0 12.728 0M12 3v9" />
+</svg>
+
+          </button>
+          <button onclick="operatorBtn('clear')" class="operator xl:col-span-3 bg-[#A32D2D]! text-[#f8b8b8] border-none">AC</button>
+         </div>
+       </div>
+      </section>
+</body>
+<script src="js/master.js">
+
+</script>
+</html>

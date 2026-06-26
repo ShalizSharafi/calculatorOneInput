@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@layer base{
+       body{
+              font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+       }
+}
+
+@layer components{
+       .digit{
+              @apply bg-[#F1EFE8] dark:bg-[#2C2C2A] flex items-center justify-center text-white text-[16px] rounded-[10px] hover:scale-90 cursor-pointer border-[0.5px] border-white p-2.5
+       }
+       .operator{
+              @apply flex  items-center justify-center bg-[#E6F1FB] dark:bg-[#2C2C2A] hover:scale-90 cursor-pointer border-[0.5px] border-[#85B7EB]  rounded-[10px] text-[#185FA5] font-bold
+              p-2.5
+       }
+}
