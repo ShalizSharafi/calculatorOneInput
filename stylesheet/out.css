@@ -177,17 +177,9 @@
   .grid {
     display: grid;
   }
-  .size-4 {
-    width: calc(var(--spacing) * 4);
-    height: calc(var(--spacing) * 4);
-  }
   .size-5 {
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
-  }
-  .size-6 {
-    width: calc(var(--spacing) * 6);
-    height: calc(var(--spacing) * 6);
   }
   .h-screen {
     height: 100vh;
@@ -273,12 +265,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .\*\:border {
-    :is(& > *) {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
-    }
-  }
   .\*\:text-xl {
     :is(& > *) {
       font-size: var(--text-xl);
@@ -349,7 +335,7 @@
     background-color: #F1EFE8;
     padding: calc(var(--spacing) * 2.5);
     font-size: 16px;
-    color: var(--color-white);
+    color: var(--color-black);
     &:hover {
       @media (hover: hover) {
         --tw-scale-x: 90%;
@@ -360,6 +346,9 @@
     }
     @media (prefers-color-scheme: dark) {
       background-color: #2C2C2A;
+    }
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-white);
     }
   }
   .operator {
